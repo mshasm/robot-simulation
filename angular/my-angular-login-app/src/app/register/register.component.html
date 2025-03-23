@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Register</h2>
+    
+    <input type="text" [(ngModel)]="registerUsername" placeholder="Enter Username">
+    <input type="password" [(ngModel)]="registerPassword" placeholder="Enter Password">
+    
+    <button (click)="registerUser()">Register</button>
+
+    <h3>{{ message }}</h3>
+
+    <p>Already have an account? <a routerLink="/login">Login here</a></p>
+</div>
+
